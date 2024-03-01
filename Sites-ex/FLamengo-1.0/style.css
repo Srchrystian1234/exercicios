@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+body{   /*corpo do site*/
+    background: linear-gradient(to bottom,rgb(0,0,0,0),rgba(0,0,0.4)),url(imagens/Nova_Camisa_Flamengo.png);/*colocando um degrade no fundo do corpo do site*/
+    margin: 0;/* colocando margem zero no corpo do texto sem espaço*/
+}
+header{ /* caebeçalho do site*/
+    background-image:linear-gradient(180deg ,darkred,black);
+    color:rgb(212, 202, 202);
+    padding: 4px; /* acoxoamento do da caixa*/
+    /* esses 3 sao extremamnte importante para deixa fixo e centralizado
+    position fixed é pra fixar na pagina 
+    left 50% colocar no canto da parede
+    transform: translate (-50%, 0 ) coloca no centro tem que ser em conjunto*/
+    position: fixed; /* fixar um bloco*/
+    left: 50%; /* 50% para esquerdar */
+    transform: translate(-50%, 0);  /* forma de colocar no meio junto*/
+    border-radius: 10px;
+    box-shadow: 10px,10px,10px,black;
+    z-index: 2;
+    min-width: 450px;
+    max-width: 936px;
+}
+h1{ /* h1 normal*/
+    text-align: center; /* colocar texto no meio*/
+}
+nav{    /*navegação de menu*/
+     /* colocar cor no fundo do site*/
+    padding: 3px; /* acoxoamento*/
+    width: 1000px; /* largura da caixa*/
+    margin: 0px;
+}
+nav > a{    /* navegaçaõ do texto com edição para o pai e filho*/
+    text-decoration: none;  /* sumir com subluninhado*/
+    font-weight: bold;  /* colocar em negrito ou sem negrito*/
+    color:white;    /* cor da letra*/
+    margin: 60px;   /*margem fora da borda*/
+    padding: 5px; /* padding dentro da borda*/
+    border-radius: 5px;
+    transition-duration: 1s;
+
+}
+nav> a:hover{ /* quando mover o mouse em cima vai faze isso */
+    text-decoration: underline; /* vai sublinhar o texto*/
+    background-color: white;
+    color: black;
+}
+
+main{ /* conteudo principal*/
+    padding: 120px 20px 20px 20px; /* para dentro da borda acoxoamento*/
+    min-height: 450px;
+    max-width: 948px;/* largura da caixa*/
+    margin: auto; /* colocar no centro do corpo do site*/    
+    border-radius: 10px; /* borda curvada */
+    box-shadow: 10px,10px,10px,black; /* para fazer o sobreamento do site*/
+    color: rgb(194, 192, 192);/*cor da letra*/
+    ;
+}
+section#Futebol{ /* sensao de selection para dividir com id Futebol*/
+    backdrop-filter: blur(10px);
+    background: transparent; /* fundo do selection*/
+    box-shadow: 10px 10px 10px rgb(255, 245, 245);/* sobreamento do selection*/
+    border-radius: 10px; /*curva do selection*/
+    margin: auto; /* colocando centro*/
+    display: block;
+    z-index: 1;
+    max-width: 1000px;
+    min-width: 450px;
+}
+article{
+   display: inline-block;
+   margin: 10px;
+}
+article#caixa-noticia{
+    display: inline-block;
+    margin: 0px;
+    
+}
+
+article#caixa-noticia >h2{  /* div artigo caixa-noticia pai e filho faz a configuracao de padding dentrod o caixa */
+    padding: 28px; /* padding de 5 pra acoxoar um pouco dentro do h2*/
+    text-align: center;
+    font-weight: bold;
+    
+}
+article#caixa-noticia > p{ /* tag do id caixa de noticia pai e filho paragrafo , para fazer modificações*/
+    padding: 5px; /* padding dos paragrafos de caixa noticias*/
+    text-align: justify; /* ajustando o texto */
+    text-indent: 30px;
+    text-indent: 30px;
+    margin: 0px;
+    max-width:450px;
+    
+}
+article#caixa-noticia >aside{ /* considerações para alguem pai e filho*/
+    padding: 5px;
+    text-align: end;/* coloca no canto tela*/
+}
+.bruno {
+    background-color: aliceblue;
+    width:350px;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.507);
+    box-shadow: 1px 1px 10px black;
+    animation: slider 10s linear infinite;
+    margin: 10px;
+    border-radius: 10px;    
+    
+}
+ 
+@keyframes slider {
+  0% {
+    background-image: url('imagens/Bruno_Henrique.png') ;
+  }
+  30% {
+    background-image: url('imagens/gabigol-flamengo.jpg');
+
+  }
+  60%{
+    background-image: url('imagens/gerson_flamengo_coringa.png');
+  }
+  80% {
+    background-image: url('imagens/r1127991_1296x729_16-9.jpg');
+  }
+  100% {
+    background-image: url('imagens/Nova_Camisa_Flamengo.png');
+  }
+ }
+footer{ /* server para contato ou agradecimentos*/
+    background-color:black; /* cor do fundo */
+    color:white; /* cor da letra */
+     /* margem da caixa*/
+    text-align: center; /* centralizar texto*/
+    width:1011px;
+    margin: auto;
+   
+}
+footer>p{
+    margin: 1px;
+}
+#lojas{ /* cconfiguracaoes da loja camisas*/
+    backdrop-filter: blur(10px);
+    background: transparent;
+    box-shadow: 10px,10px,10px,rgb(255, 245, 245);/* para fazer o sobreamento do site*/
+    border-radius: 10px;/*borda curvada*/ 
+}
+article#camisa > h2{
+    margin: 4px; /* espaço entre os blocos */
+    text-align: center;
+    padding: 10px;
+}
+article#camisa > p{
+    text-indent: 30px;
+    text-align: justify;
+    margin: 4px;
+}
+article#camisa2 > h2{
+   margin: 4px;
+   text-align: center;
+}
+article#camisa2 >p{
+    text-indent: 30px;
+    text-align: justify;
+    margin: 4px;
+}
+/*-----------------------------------------pagina 2*/
+body#segunda-pagina{
+    background: linear-gradient(to bottom,rgb(0,0,0,0),rgba(0,0,0.4)),url(imagens/Nova_Camisa_Flamengo.png);
+    margin: 0;
+}
+
+article#caixa-noticia-2{
+    text-align: center;
+    
+
+}
+article#caixa-noticia-2 >form{
+    width: 300px;
+    height: 100px;
+    margin: auto;
+  
+
+}
+input{
+    background:transparent;
+    border-radius: 10px;
+}
+div.login{
+    margin: 10px;
+}
+div.socios-torcedor{
+    background-color: aliceblue;
+    display: inline-block;
+    width: 170px;
+    margin: 10px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+  }
+  div#caixa-noticia-3{
+    text-align: center;
+    margin: -21px;
+    
+
+}
+div#caixa-noticia-3 >form{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+  
+
+}
+div.video{
+    margin: 0px -20px 10px -20px;
+    padding: 55px;
+    padding-bottom:57% ;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}

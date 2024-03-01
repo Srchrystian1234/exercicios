@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+            
+            min-width:278px ; /* pq 320, pq é a largura maxima de uns celulares antigos,e a largura maxima quando a tela do celular ta em pé */
+            /* configuração para celular*/
+            /* a tela somente vai chegar a 320px , a tela so vai aumentando agora */
+            max-width: 700px; /* o tamanho maximo que ele vai ocupar é de 800 pix de uma tela pq eu configurei*/
+            /*so aumentando agora ate 700 px , depende do quebramento do site*/
+            margin: auto;
+        }
+      img{
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa maxime rem sed exercitationem necessitatibus quam in? Quasi, perspiciatis aspernatur aperiam voluptas excepturi culpa quia, consequatur neque sapiente cum porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui placeat fugiat est aut culpa libero, asperiores voluptatum animi ea tenetur ipsam aliquam neque, amet ab, ipsa iure velit! Provident, repellendus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, dolores! Quia beatae a asperiores architecto sapiente ad voluptatum voluptas voluptate suscipit, fugit, sint omnis amet cupiditate autem et quod voluptates!  </p>
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg"> <!--quando atingir essa marcar de 600px diminuindo a imagem pequena da irina vai peagar outra pequena -->
+        <img src="imagens/irina-blok.jpg" alt=""></picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsa maxime rem sed exercitationem necessitatibus quam in? Quasi, perspiciatis aspernatur aperiam voluptas excepturi culpa quia, consequatur neque sapiente cum porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui placeat fugiat est aut culpa libero, asperiores voluptatum animi ea tenetur ipsam aliquam neque, amet ab, ipsa iure velit! Provident, repellendus.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, dolores! Quia beatae a asperiores architecto sapiente ad voluptatum voluptas voluptate suscipit, fugit, sint omnis amet cupiditate autem et quod voluptates!  </p>
+    </main>
+</body>
+</html>

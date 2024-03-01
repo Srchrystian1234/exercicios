@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+*{/* global */
+    font-family: Arial, Helvetica, sans-serif;
+   /*height: 100%;*/
+}
+body{
+    background-image: linear-gradient(to right,#00E3CC,#009688);
+    /* degrade do fundo do body*/
+}
+main{
+    background-color: white; /*cor de fundo do main*/
+    border-radius: 10px; /* borda com curva */
+    box-shadow:5px 5px 5px rgba(78, 117, 113, 0.479) ; /* sobreamento  , caso queira a mesma cor, so que mais escura , somente é fazer o monocromatico e arrasta a bolinha pra baixo pra ficar escuro*/
+    width: 600px; /*  largura do */
+    padding: 10px; /* acoxoamneto  deu uma afastada */
+    margin: auto; /* vai centralizar independete do tamanho da tela*/
+}
+h1{
+color: #00635A; /* cor do titulo*/
+text-align: center; /* alinha o texto no centro*/ 
+text-shadow:1px 1px 2px #016157a4 ; /* sombra do texto*/
+}
+h2{ /* cor do subir titulo*/
+color:#32A89C
+}
+p{
+    text-align: justify; /* paragrafos justificados*/
+}

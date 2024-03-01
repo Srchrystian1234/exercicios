@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML 5</title>
+</head>
+<body>
+    <H1>Imagens dinamicas</H1>
+    <p>tente abrir esse site em varios dispotivos diferentes  ou simplicimente aumente ou diminua o tamanho do seu navegador</p>
+    <picture> <!-- importante ele permite varias fontes ex: img-->
+        <!-- no source ele gosta de trabalha com a largura minima , vamos de maxima -->
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <!--comentario importante : se voce tem uma imagem de 1000 px a pagina  se tiver menos que isso vai abri a imagem minima que seria a media imagem  ex max-width 1000px srcset= (obs nao funciona o ctrl +space tem, que escrever a mao)-->
+        <!-- melhor forma de adaptar a fomra da tela do usuario-->
+        <!--sempre tem que esta na ordem os s-->
+        <img src="imagens/foto-g.png" alt="imagens flexivel"> <!--adiciona a imagem-->
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos Aprender  a Reproduzir Audios em HTML</p>
+    <audio src="midia/fazendo_falta.mp3" controls ></audio> <!--essa forma de coloca pra roda uma musica em html (controls serve para  a parece o icone de audio na pagina e o autoplay para tocar assim que entrar no site)-->
+    <!--formatados de audio compartiveis mp3 wav ogg-->
+    <!--outra forma para tocar a musica nos navegadores-->
+    <audio preload="metadata" controls  loop>
+        <!--loop serve para volta musica do inicio-->
+        <!--preloard muito importante para abertura do site, 3 forma de usa o preloard , auto perigoso demias que ele vai querer carregar o audio todo , se por acaso for um podcast , nao vale a pena, metadata , vai carregar so as informações de data ,nome do arquivo etx
+        none - vai carregar nada , so vai ouvir o audio quando dar play-->
+        <!--ordem é muito importante a mp3 nesse caso que vai vim primeiro , caso nao conseguir o proximo vai-->
+            <source src="midia/patio_do_posto.mp3" type="audio/mpeg"> <!--essa forma de coloca o mp3 para os navegadores que funcionam mp3-->
+            <!--caso queira no formato de outra midia por exemplo ogg ou wav-->
+            <source src="midia/patio_do_posto.ogg" type="audio/ogg">
+            <source src="midia/patio_do_posto.wav" type="audio/wav">
+            <!--se por acaso ele nao conseguir nenhum de cima -->
+            <p>infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/patio_do_posto.mp3">Clique aqui para faze downloand</a></p>
+    </audio>
+    
+
+</body>
+</html>

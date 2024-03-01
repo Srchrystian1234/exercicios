@@ -1,0 +1,69 @@
+body{
+    background-image: linear-gradient(to left,#042940,#9FC131); /* feito o degrade no body*/
+    font-family: Arial, Helvetica, sans-serif;/* feito o a fonte no corpo do texto*/
+}
+header{
+    width: 600px;
+    height: 200px;
+    margin: auto;
+    /*importante essa configuraçaõ para deixa a pagina centralizada
+}
+ul{ /* usei uma lista para fazer o menu nao ordenadas*/
+ 
+    position: fixed; /* posição do menu para fixar em cima*/
+     /* ajuste que as vezes sao preciso*/
+    width: 700px; /* largura da lista*/
+    margin: auto;
+    padding: auto;
+
+}
+li{
+     /* configuraçaõ principal*/
+    display: inline-block; /* coloca o item em bloco*/
+    padding: 10px;   /* acoxoamento da pagina */
+    width: 100px; /* largura*/
+    text-align: center;   /* centralizar texto*/
+    margin-bottom: 10px;   /* margim é de baixo*/
+    margin: 10; /* total*/
+
+    
+}
+li:hover{ /* quando passa o mouse*/
+    text-decoration: underline; /* sublinhado*/
+}
+
+.home > p{ /* pai e filho muito cuidado*/
+   display: none; /* desaparece com as coisa*/
+    position: fixed; /* fixar a posicao*/
+    margin: 10px; /* margem*/
+    padding: 10px;/* acoxoamento*/
+    width: 25px; /* largura*/
+    
+}
+.lista > a{  /* pai e filha do link */ 
+    text-decoration: none; /* desaparece com ok texto*/
+    position: fixed;
+    text-align: center;
+     /* borda*/
+  
+}
+.home:hover >p { /* quando passa o mouse*/
+    display: block; /* aparece com o texto*/
+    position: static; 
+   
+}
+
+.lista:active > a{ /* troca a cor quando clicar*/
+    color: #9FC131;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:visited{ /* quando for visitado*/
+    color: rgb(8, 8, 159);
+}
+.home:hover{  /* quando clicar é o que vai aparecer no fundo*/
+    background-color:#9fc13170;
+    border-radius: 10px;
+}
+
+
+/* estou usando o termos li e ul para fazer o menu , por enquanto o unico jeito que esta funcionando*/

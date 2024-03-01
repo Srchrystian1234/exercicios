@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;/* fonte do site*/
+    background-color: dimgray; /* cor do fundo*/
+    margin: 0; /* margem de fora da borda*/
+}
+header {
+    background-color: white;
+    padding: 10px;/* pra dentro da borda*/
+    margin: 10px; /* para fora da borda so funciona se colocar os tamanhos da caixa com width e height*/
+   
+    
+}
+nav{
+    background-color: rgb(102, 102, 102);
+    padding: 3px; /* engorda um pouquinho*/
+    box-shadow: 5px 3px 7px 1px rgba(10, 10, 10, 0.432);
+   
+}
+nav > a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+    
+}
+nav >a:hover{
+    text-decoration: underline;
+}
+main{ /* conteudo principal*/
+    background-color: white;
+    padding: 10px;/* pra dentro da borda*/
+    margin: 10px;/* para fora da borda*/
+    border-radius: 10px 10px 20px 30px;
+    
+}
+article{ /*corpo do assunto dentro de selection*/
+    background-color: lightgray;
+    padding: 5px;
+    
+}
+article > aside{ /* pai e filho*/ 
+    background-color: lightslategray;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0;
+}
+footer > p{
+    margin: 0;
+}
+div#bola{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+    <style>
+        div{
+            background-color: lightgray;
+            border: 1px solid black; /* tamanho,tipo e cor*/
+            text-align: center; /* alinha texto*/
+            height: 200px;
+            width: 200px;
+            display: inline-block;/* a coloca as divs em blocos alinhados*/
+           
+            
+            
+        }
+        #d1{
+            background-color: antiquewhite;
+            transition: width 2s,height 3s,transform 5s; /* parte da transição para o qualquer coisa ,nesse caso com transform e tamanho e largura*/
+            border-radius: 6px;/* borda com curva*/
+           
+
+        }
+        #d1:hover{ /* casp voce passa em cima do d1 , ele vai fazer esse comandos a baixo*/
+            background-image: linear-gradient(to right,#A5F060,#69F060); /* deixa o degrader no fundo da tela*/
+            width: 250px;
+            height: 250px;
+            transform: rotate(360deg); /* modo de rotação*/
+           
+        }
+        #d2{
+            transform: skewY(20deg); /* deixa a caixa meio de lado*/
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

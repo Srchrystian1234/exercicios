@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /*
+            Seletores personalizados
+            # = id
+            .= class
+            := pseudo do class
+            ::= pseudo - element
+            > = clildren (filhos)
+            */
+        body{
+            font-family: Arial, Helvetica, sans-serif;/* fonte do corpo do texto*/
+           
+        }
+        a{
+            color: red; /* modificação dos links*/
+            text-decoration: none; /* tirando o sublinhado do texto*/
+            font-weight: bold;/* colocando em negritp*/
+        }
+        a:visited{ /* pseudo-classes mudadno cor do visited*/
+            color: rgb(90, 6, 6);
+        }
+        /* quando eu passar o mouse em cima eu quero que ele sublinhe*/
+        a:hover{
+            text-decoration: underline; /* sublinhado*/
+            color: rgb(11, 144, 221);
+        }
+        /* quando eu clicar nesse modo active do pseudo , ele fica a cor que eu desiguinar a ele*/
+        a:active{
+            color: rgb(6, 155, 38);
+            font-family:monospace;
+        }
+        /* nesse pseudo elemento vemos o elemento before que vem antes do link no caso , a tag content server para colocar o conteudo em questao que nao esta no html
+        */
+        .especial::before{ 
+            content:'↠' ;
+        }
+        /* pseudo do elemento :: after depois do elemento do  link no final pra noa confundir , vai ter essa escrita "click aqui"*/
+        .especial::after{
+           content:' ↤ ';
+          
+        }
+        .especial{
+            background-color: rgb(255, 140,140);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisandos </h1>
+    <ul>
+        <li><a href="https://github.com/Srchrystian1234" target="_blank">Repositorio GitHub</a></li>
+        <li><a href="https://Youtube.com"target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100013702126658"target="_blank" class="especial">Site Curso em video</a></li>
+    </ul>
+</body>
+</html>
