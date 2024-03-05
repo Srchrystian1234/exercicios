@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de imagem de fundo</title>
+    <style>
+        /* consigo colocar uma imagem no fundudo*/
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        div.quadrado{
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+            border-radius:10px ;
+            background-color: lightgray;
+            display: inline-block; /* para colocar as divs um lado da outra */
+            margin: 40px;
+        }
+        div#q1{
+            background-color: skyblue;/* primeira forma de colocar com (chapada) modo padrao*/
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow,orange); /* segunda forma de grandiente degrader*/
+        }
+        div#q3{
+            background-image: url(imagens/pattern001.png);/* o guanabara fez com aspas,mas o sem aspas funciona normalmente , caso haja probelma mais para frente voltarei a usa aspas ""*/
+            /* imagem de fundo */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
