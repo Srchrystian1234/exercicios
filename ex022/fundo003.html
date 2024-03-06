@@ -5,23 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>posição do fundos</title>
     <style>
-        body{
-            div.bloco{
-                height: 100px;
-                border: 1px solid black;
+        
+            div.bloco{ /* configurando a class*/
+                height: 200px; /* altura da div*/
+                border: 1px solid black; /* borda da div*/
+                border-radius: 20px; /* curva da div*/
+                margin: 10px; /* margin da div*/
+                background-image: url(imagens/wallpaper003.jpg);
+                /* fundo de imagem da div */
+                
             }
-        }
+            div#q1{
+                background-position:left top;
+                /* posicionando o fundo de imagem de uma tela div
+                canto esquerdo em cima
+                */
+            }
+            div#q2{
+                background-position: left center;
+                /*
+                canto esquerdo no meio
+                */
+            }
+            div#q3{
+                background-position: right bottom;
+                /*
+                canto direito em baixo*/
+            }
+            div#q4{
+                background-position: center center;
+                /* no centro */
+            }
+        
     </style>
 </head>
 <body>
-    <div class="bloco">
+    <div class="bloco" id="q1">
 
     </div>
-    <div class="bloco">
+    <div class="bloco" id="q2">
 
     </div>
-    <div class="bloco">
+    <div class="bloco" id="q3">
 
     </div>
+    <div class="bloco" id="q4">
+
+    </div>
+    
 </body>
 </html>
