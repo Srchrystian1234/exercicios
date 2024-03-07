@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tamanho da imagem</title>
+    <style>
+        body{
+            height: 98vh;/*sempre colocar esse height mesmo com repeat*/
+            background-color: black;/* imagem de cor
+            ideial sempre configura uma cor de fundo
+            quando o seu site é carregador p interessante é carregador primeiro a cor de baixo pq pode demora pra imagem carregar */
+            background-image: url(imagens/wallpaper002.jpg);/*imagem de fundo*/ 
+            background-position: center center;/* centralizo no alto */
+            background-repeat: no-repeat;/* nao repeti*/
+           /* background-size: 100% 100%; ele fica bacana quando aumenta e diminu ,mas fica preto em baixo
+            so que el vai achatando distorce a imagem solucao pessima*/
+            /*background-size: auto; por padrao o alinhamento do backgrund size é auto*/
+            /*background-size: contain; o que ele faz , ele dar a ordem pra imagem ficar 100% exibida, nao distorce,mas para esse problema ela nao resolve, esse sempre vao fazer o esforco de mostra 100% da imagem na tela*/
+            background-size: cover;/* o que ele faz (significado cobri) ele vai cobri a tela inteira mesmo que pra isso ter que picota um pouco a igame ,e ele vai adaptado o fundo de acordo com o tamanho da imgame*/
+        }
+        main{
+           background-color: white;/* branco cor do fundo*/
+            width: 400px;/* largura */
+            padding: 10px;/* acoxoamento*/
+            margin: auto; /* margin pra colocar no centro*/
+            border: 1px solid darkblue; /* borda*/
+            border-radius: 10px; /* curva na borda*/
+            box-shadow: 1px 1px 1px darkblue;
+            
+        }
+    </style>
 </head>
 <body>
     <main>
         <h1>teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, maiores ducimus perferendis accusantium quisquam commodi asperiores a, ad minima id reiciendis praesentium quia expedita tempora modi dicta eum molestias doloremque? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, maiores ducimus perferendis accusantium quisquam commodi asperiores a, ad minima id reiciendis praesentium quia expedita tempora modi dicta eum molestias doloremque? 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam sequi quisquam molestias quasi ab facere, suscipit voluptas, perferendis earum dolor rem consectetur delectus labore saepe veniam provident dolorem laudantium error!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio tempora, aliquid iure voluptatum dignissimos similique voluptas quibusdam numquam consequuntur esse vel dolor, nobis a id magni nostrum in aliquam vitae!
+        </p>
     </main>
 </body>
 </html>
