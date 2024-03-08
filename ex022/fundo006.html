@@ -7,9 +7,30 @@
     <style>
         body{
             height: 98vh;/*sempre colocar esse height mesmo com repeat*/
-            
-            background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
-            background-size: cover;
+            background-color: black;/* imagem de cor
+            ideial sempre configura uma cor de fundo
+            quando o seu site é carregador p interessante é carregador primeiro a cor de baixo pq pode demora pra imagem carregar */
+            background-image: url(imagens/wallpaper002.jpg);/*imagem de fundo*/ 
+            background-position: center center;/* centralizo no alto */
+            background-repeat: no-repeat;/* nao repeti*/
+           /* background-size: 100% 100%; ele fica bacana quando aumenta e diminu ,mas fica preto em baixo
+            so que el vai achatando distorce a imagem solucao pessima*/
+            /*background-size: auto; por padrao o alinhamento do backgrund size é auto*/
+            /*background-size: contain; o que ele faz , ele dar a ordem pra imagem ficar 100% exibida, nao distorce,mas para esse problema ela nao resolve, esse sempre vao fazer o esforco de mostra 100% da imagem na tela*/
+            background-size: cover;/* o que ele faz (significado cobri) ele vai cobri a tela inteira mesmo que pra isso ter que picota um pouco a igame ,e ele vai adaptado o fundo de acordo com o tamanho da imgame*/
+            /*uma observacao , se o conteudo foi muito grante vai ter uma hora que vai aparerecer o fundo preto ou mesmo vai repeti a imagem para baixo*/
+            /*background-attachment: scroll; o fundo vai rolar junto com o conteudo com scrool
+            outra opcap é o fixed*/
+            background-attachment:fixed ;/* o fundo fica fixo*/
+            /* backgruond -size :cover;
+            e background-attachment, ele trabalham jutnos*/
+            /*shorthand-background*
+                seguencia
+                color-image-position-repeat-[size]-attachment
+            /
+            */
+           /* background: black url(imagens/wallpaper002.jpg) center center no-repeat  fixed;
+            background-size: cover; so funciona em baixo o size*/
 
         }
         main{
