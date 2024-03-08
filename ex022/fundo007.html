@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+        /* criamo duas div semanticas*/
+
+        #container{ /* class container que é a section ocupar a tela toda*/
+            position: relative;/* para pode mover a article em baixo*/
+            height: 96vh;/* tamanho da section*/
+            background-color:blueviolet ; /* cor de fundo */
+            padding: 10px;/* padd para pode diferencia as duas divs*/
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+        }
+        /*centralizar sem o metodo margin
+        para fazer isso o container que é o section tem que ter uma posistion relativa*/
+
+        /*quando configuro o relative em cima a caixa que ta por baixo do absolute */
+        /*section é o relative 
+        e o article é o absolute*/
+        /* dessa forma consigo usar o left >top >right>bottom >*/
+        #conteudo{
+            background-image: url(imagens/target001.png);/*fundo da tela*/
+            background-size: 100% 100%;/* 100% da div*/
+            position: absolute;/* posicionamento absolute*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;/* movendo pra esquerda deixo 50% pra ficar ao metade da pagina*/
+            top: 50%;/* mesma scois do left para cima*/
+            transform: translate(-50%,-50%);/* esse funciona como movimentacao tambem , prima parte vai pra aos lado e a segunda pra cima ou pra baixo depende se for negativo ou positivo*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
