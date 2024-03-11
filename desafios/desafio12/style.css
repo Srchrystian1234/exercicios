@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* primeiro de tudo vamos zera todos nosso elementos*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{ /* importante configurar todo o html e corpo do html tambem*/
+    /* sempre é importante colocar o minimo do corpo do site*/
+    /* sempre colocar o tamanho minimo da minha vh*/
+    /* como é a altura eu faço vh ,se fosse a largura seria vm*/
+    min-height:100vh ; 
+    background-color: darkgray;
+}
+/*configurando o header que sao as configurações mais simples*/
+header{
+    background-color: black; /* colocando um preto no fundo por padrao*/
+    color: white;/* e um branco pra diferencia na letra*/
+    text-align: center;/* testei com texte-align para ver se centraliza e funcionou*/
+
+}
+header >h1{
+    padding-top:50px ; /* configura um padding sempre de 50px*/
+    /* como colocar em letra maiuscula*/
+    /*text-transform: uppercase; é uma forma de deixa maiuscula*/
+    font-variant: small-caps;
+    /* tem essa duas forma de fazer a letra maiuscula, o mais recomendado é o small-caps*/
+}
+header >p{
+    /* é em conjunto o h1 padding 50 px pra cima e o p padding 50 px pra baixo*/
+    padding-bottom: 50px;
+}
+/*configurar o link que esta dentro do cabeãlho*/
+/* essa forma de faser colocando o header e o footer junto, pq se quiser colocar outra links ficam mais facil,mas eu tambem podia colocar so o a mesmo*/
+ header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover,footer a:hover{
+    text-decoration: underline;
+}
+/* o que eu vou fazr para ganhar espaço e rolagem para pode fazer o efeito paralax*/
+section{
+    padding-top: 10vh;/* de 10% da altura da tela*/
+    padding-bottom: 10vh;
+    /* vai fazer que ele ganha 10 %da tela toda*/
+    /* se eu acaso ja diminuit a altura ele ja se adpata*/
+    line-height: 2em;
+    /* melhorando a leitura para as pessoas e dar o espaçmento
+    fazer o afastamento um pouco mais pra dentro com padding*/
+    padding-left: 30px;
+}
+/* vamos configurar agora a section da class normal*/
+section.normal{
+    background-color: white;
+    color: black;
+}
+/* vamos configurar agora a section da class imagem aonde vai ficar as imagem*/
+section.imagem{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    
+}
+/*fazendo as p ficar tudo com caixa*/
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+/* configurando o rodape*/
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+}
