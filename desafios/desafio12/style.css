@@ -73,6 +73,10 @@ section{
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
+section > p{
+    padding-bottom: 2em;
+    /* para dar uma espaçadinha*/
+}
 /* vamos configurar agora a section da class normal*/
 section.normal{
     background-color: white;
@@ -82,13 +86,33 @@ section.normal{
 section.imagem{
     background-color: rgb(54, 54, 54);
     color: white;
+    /* sombra interna */
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473) ;
+    background-size: cover;
+    /* depois que tudo estiver configurado so usaro o attachment fixed*/
+    background-attachment: fixed;
     
 }
 /*fazendo as p ficar tudo com caixa*/
 section.imagem > p{
     display: inline-block;/* quando eu faço isso a caixa se adpata ao tamanho do conteudo*/
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px  black;/* colocando sombra na no texto*/
+    
+}
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    /* a imagem da joaninha vem muito grande , por isso no inicio nao estranhe*/
+    /* vamos posicionar a imagem primeiro*/
+    background-position: right center;
+    /* posicao da imagem*/
+    /* colocar um backgruound pra coer pra ficar mais organizado*/
+    
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    
 }
 /* configurando o rodape*/
 footer{
