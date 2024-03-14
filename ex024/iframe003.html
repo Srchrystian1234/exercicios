@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso da iframe</title>
+    <style>
+        /* configurações basicas pra css */
+        /* lembrando que sempre as csss vao prevalecer */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        iframe#tela{
+            width: 100vw;
+            height: 450px;
+           border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- forma de navegaçãos das paginas*/-->
+    <h1>faca uma olha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, fugiat. Rerum voluptatem repellendus et voluptas expedita sint corrupti, ullam numquam voluptates aspernatur minus necessitatibus neque, ipsam quidem ipsum iure dolor!</p>
+<!-- criado uma lista pros links-->
+    <ul>
+        <li><a href="pagina-extras/pagina001.html" target="frame">Primeira pagina</a></li>
+        <!-- cada link tem um caminho que direciona pro ifrome ,nesse caso ele ta direcionando com target = frame que foi o name definido na iframe a baixo-->
+        <li><a href="../ex023/tabela002.html" target="frame">segunda pagina</a></li>
+        <li><a href="../ex023/tabela003.html" target="frame">terceira pagina</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate impedit ipsum iusto cum et in hic ullam, esse reprehenderit dicta earum omnis modi, aperiam itaque inventore veritatis nostrum repellat quae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt sint nobis architecto aspernatur vitae necessitatibus cum repellendus esse natus, quidem optio, quam, dolores distinctio. At magnam praesentium officia assumenda suscipit.</p>
+    <!-- aqui no iframe foi definido o name  frame pra fazer a ligação com 0s links-->
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolhas uma das opções acima> </h1> <p> Lorem
+        jdhojksdhapksdjnklasdnalksndklasn
+    </p> <img src='imagem/WhatsApp Image 2024-03-06 at 15.26.49.jpeg'> "> <!-- essa forma voce consehue adicionar varios codigos html dentro da srcdoc-->
+        <p>infelizmente o seu navegador nao e compativel com nagegador</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ullam omnis neque rem reprehenderit officia cupiditate error temporibus ab consequatur sint vero quae, incidunt maxime? Sunt reprehenderit suscipit mollitia excepturi!</p>
+</body>
+</html>
